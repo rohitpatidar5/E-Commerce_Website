@@ -7,7 +7,7 @@ import ProductDisplay from '../Components/ProductDisplay/ProductDisplay'
 const Product = () => {
   const { all_Product } = useContext(ShopContext);
   const { productId } = useParams();
-  const product = all_product.find((e) => e.id === Number(productId))
+  const product = all_Product.find((e) => e.id === Number(productId))
   return (
     <div>
         <Breadcrums product={product}/>
